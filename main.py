@@ -4,6 +4,7 @@ from fastapi.responses import HTMLResponse
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 import os
 
+
 # --- DATABASE SETUP ---
 # Default to local "map_data.db" for laptop testing, but allow the server to override it
 db_path = os.getenv("DB_PATH", "map_data.db")
